@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #eef1f5;
+}
+.background-page {
     height: 100vh;
     margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
     background-color: #019999;
 }
 .container {
@@ -17,9 +19,10 @@ body {
     margin: 0 auto;
     display: grid;
     place-content: center;
+    position: relative;
 }
 
-h1 {
+.title {
     text-align: center;
     color: #ffffff;
     font-size: 1.8rem;
@@ -73,5 +76,85 @@ h1 {
     margin-bottom: 1rem;
 }
 .card .btn:hover {
-    background-color: #04c5c5;
+    background-color: #237777;
+}
+
+/* Páginas de figuras geométricas */
+.header {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #019999;
+    padding: 2rem 0;
+    color: #ffffff;
+}
+.header h1 {
+    font-size: 2.2rem;
+}
+.header p {
+    font-size: .9rem;
+    padding-top: 1rem;
+}
+.forms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.single-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+.single-form h2 {
+    color:#019999;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+}
+.single-form form {
+    margin: 1rem 0;
+}
+
+.single-form form label {
+    font-size: .9rem;
+}
+.single-form form input {
+    padding: .5rem;
+}
+.single-form form .enterNumber {
+    width: 100%;
+    margin: .3rem 0 0;
+}
+
+.mostrarElResultado {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.single-form form .labelResultado {
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.single-form form .inputResultado {
+    margin: 1rem 0;
+    height: 2rem;
+    padding-left: .5rem;
+    flex: 1 0 0;
+}
+
+
+.single-form form button {
+    width: 100%;
+    color: #ffffff;
+    background-color: #019999;
+    border: none;
+    padding: .9rem 0;
+    border-radius: 0.25rem;
+    margin-bottom: .4rem;
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
 }

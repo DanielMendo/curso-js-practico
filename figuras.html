@@ -6,12 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas | Curso práctico de js</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/287cb3240f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
+    <header class="header">
         <h1>Figuras geométricas</h1>
+        <p>Cálciula el área y perimetro de las siguientes figuras geométricas</p>
+    </header>
+    <div class="container">
+        <section class="forms">
 
-        
+            <div class="single-form">
+                <h2>Cuadrado</h2>
+                <form action="#">
+                    <label for="inputCuadrado">Escribe cuanto mide el lado del cuadrado:</label>
+                    <input type="number" name="" id="inputCuadrado" class="enterNumber">
+                    <div class="mostrarElResultado">
+                        <label for=""class="labelResultado">El resultado es: </label>
+                        <input type="number" class="inputResultado" readonly id="mostrarResultado" >    
+                    </div>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular el área del cuadrado</button>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro del cuadrado</button>
+                </form>
+            </div>
+
+
+            <div class="single-form">
+                <h2>Cuadrado</h2>
+                <form action="#">
+                    <label for="inputTriangulo">Escribe cuanto mide el lado del triángulo</label>
+                    <input class="enterNumber" type="number" name="" id="inputTriangulo">
+                    
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular el área del cuadrado</button>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro del cuadrado</button>
+                </form>
+            </div>
+
+
+            <div class="single-form">
+                <h2>Cuadrado</h2>
+                <form action="#">
+                    <label for="inputCuadrado">Escribe cuanto mide el lado del triángulo</label>
+                    <input type="number" name="" id="inputCuadrado">
+                    
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular el área del cuadrado</button>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro del cuadrado</button>
+                </form>
+            </div>
+        </section>
     </div>
     <script src="./figuras.js"></script>
 </body>
