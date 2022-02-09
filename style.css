@@ -103,7 +103,8 @@ body {
 .single-form {
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 0.5rem;
     padding: 1rem;
     background-color: #ffffff;
 }
@@ -114,28 +115,52 @@ body {
     font-weight: 700;
 }
 .single-form form {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+}
+
+.single-form .escribirNumero {
+    display: flex;
+    margin-top: .3rem;
 }
 
 .single-form form label {
-    font-size: .9rem;
+    font-size: .8rem;
+    color: #000000;
 }
 .single-form form input {
     padding: .5rem;
 }
+.single-form form input, select {
+    background-color: #f7f7f7;
+    border: 1px solid #5f5e5e;
+    border-radius: 0.25rem;
+}
 .single-form form .enterNumber {
-    width: 100%;
-    margin: .3rem 0 0;
+    flex: 1 0 0;
+}
+
+.single-form form .enterNumberT {
+    width: 30%;
+    margin-right: 0.3rem;
+    font-size: 0.7rem;
+}
+.single-form form .enterNumberT:nth-child(4) {
+    margin-right: 0;
+}
+.single-form form .escribirNumero .seleccion {
+    padding: .5rem;
+    margin-left: .5rem;
+    height: 35px;
 }
 
 .mostrarElResultado {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    margin: 1rem 0;
 }
 .single-form form .labelResultado {
-    font-weight: bold;
-    margin-right: .5rem;
+    width: 6.5rem;
 }
 
 .single-form form .inputResultado {
@@ -145,16 +170,31 @@ body {
     flex: 1 0 0;
 }
 
+.single-form form .inputResultadoMedida {
+    width: 58px;
+    margin-left: .5rem;
+    height: 2rem;
+}
+
+.single-form form .botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
 
 .single-form form button {
     width: 100%;
     color: #ffffff;
     background-color: #019999;
     border: none;
-    padding: .9rem 0;
+    padding: .8rem 0;
     border-radius: 0.25rem;
     margin-bottom: .4rem;
     font-size: .9rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+.single-form form button:hover {
+    background-color: #237777;
 }

@@ -27,26 +27,49 @@
                 <h2>Cuadrado</h2>
                 <form action="#">
                     <label for="inputCuadrado">Escribe cuanto mide el lado del cuadrado:</label>
-                    <input type="number" name="" id="inputCuadrado" class="enterNumber">
+                    <div class="escribirNumero">
+                        <input type="number" name="" id="inputCuadrado" class="enterNumber">
+                        <select name="" id="enterMedida" class="seleccion">
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                        </select>
+                    </div>
                     <div class="mostrarElResultado">
                         <label for=""class="labelResultado">El resultado es: </label>
-                        <input type="number" class="inputResultado" readonly id="mostrarResultado" >    
+                        <input type="number" class="inputResultado" readonly id="mostrarResultado" >  
+                        <input type="text" class="inputResultadoMedida" readonly id="mostrarMedida">  
                     </div>
-                    <button type="button" onclick="calcularAreaCuadrado()">Calcular el área del cuadrado</button>
-                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro del cuadrado</button>
+                    <div class="botones">
+                        <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                    </div>
                 </form>
             </div>
 
 
             <div class="single-form">
-                <h2>Cuadrado</h2>
+                <h2>Triángulo</h2>
                 <form action="#">
-                    <label for="inputTriangulo">Escribe cuanto mide el lado del triángulo</label>
-                    <input class="enterNumber" type="number" name="" id="inputTriangulo">
-                    
-                    <button type="button" onclick="calcularAreaTriangulo()">Calcular el área del cuadrado</button>
-                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro del cuadrado</button>
-                </form>
+                    <label for="inputTriangulo">Escribe cuanto mide el lado del cuadrado:</label>
+                    <div class="escribirNumero">
+                        <input type="number" name="" id="inputTrianguloAltura" class="enterNumberT" placeholder="Altura">
+                        <input type="number" name="" id="inputTrianguloBase" class="enterNumberT" placeholder="Base">
+                        <input type="number" name="" id="inputTrianguloLadoA" class="enterNumberT" placeholder="Lado A">
+                        <input type="number" name="" id="inputTrianguloLadoB" class="enterNumberT" placeholder="Lado B">
+                        <select name="" id="enterMedida" class="seleccion">
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                        </select>
+                    </div>
+                    <div class="mostrarElResultado">
+                        <label for=""class="labelResultado">El resultado es: </label>
+                        <input type="number" class="inputResultado" readonly id="mostrarResultadoT" >  
+                        <input type="text" class="inputResultadoMedida" readonly id="mostrarMedida">  
+                    </div>
+                    <div class="botones">
+                        <button type="button" onclick="calcularAreaTriangulo() " id="btnTArea">Calcular el área</button>
+                        <button type="button" onclick="calcularPerimetroTriangulo()" id="btnTPerimetro" >Calcular el perímetro</button>
+                    </div>
             </div>
 
 
